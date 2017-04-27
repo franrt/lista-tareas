@@ -1201,6 +1201,10 @@ var res = [{
 ];
 
 for (var i = 0; i < 10; i++) {
-    document.write("<div><li>User: " + res[i].userId + '<br>' + "Task Number: " + res[i].id + '<br>' + "Task: " + res[i].title + '<br>' + "Status: " +
-        res[i].completed + "<br><hr></li></div>");
+    document.write("<div><UL><li>Task: " + res[i].title + "<br></li><UL></div>");
+}
+
+function printTask() {
+    var input = document.getElementById("task").value;
+    document.getElementById("getTask").innerHTML += ("<div><UL><li>Task: " + input + "<br></li><UL></div>");
 }

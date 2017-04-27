@@ -10,12 +10,17 @@
 
 <body>
     <div id="myDIV" class="header">
-        <h2>To Do List</h2>
-        <input type="text" id="myInput" placeholder="Title...">
-        <span onclick="newElement()" class="addBtn">Add</span>
+        <h1>To Do List</h1>
+        <label for="task"></label>
+        <input type="task" id="task">
+
+        <div class="cont-task"></div>
+        <button type="submmit" onclick="printTask()">ADD NEW TASK</button>
+        <script src="assets/js/main.js"></script>
+        <div id="getTask"> </div>
     </div>
-    <li></li>
-    <script src="assets/js/main.js"></script>
+
+
 </body>
 
 </html>
