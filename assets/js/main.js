@@ -1200,11 +1200,13 @@ var res = [{
     }
 ];
 
+//Esta función recorre el arreglo y devuelve las primeras 10 tareas en forma de lista desordenada (con bullets)
 for (var i = 0; i < 10; i++) {
     document.write("<div><UL><li>Task: " + res[i].title + "<br></li><UL></div>");
 }
 
+//con esta función se agrega y se imprime la nueva tarea en el html
 function printTask() {
     var input = document.getElementById("task").value;
-    document.getElementById("getTask").innerHTML += ("<div><UL><li>Task: " + input + "<br></li><UL></div>");
+    document.getElementById("getTask").innerHTML += ("<div><li>Task: " + input + "<br></li></div>");
 }

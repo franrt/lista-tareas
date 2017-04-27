@@ -9,18 +9,24 @@
 </head>
 
 <body class="body" background="assets/images/seamless.jpg">
+    <!-- cod para insertar un fondo -->
     <div class="divs">
-        <div align="center">
+        <div id="contenedor">
+            <!-- css para dar forma a mi codigo en pantalla (el ancho) -->
             <div id="myDIV" class="header">
                 <h1 class="title">To Do List</h1>
                 <label for="task"></label>
                 <input type="task" id="task">
                 <div class="cont-task"></div>
+                <!-- con este codigo armo el botón que luego el js va a "rellenar" -->
                 <button class="button" type="submmit" onclick="printTask() ">ADD NEW TASK</button>
-                <script src="assets/js/main.js "></script>
-                <div id="getTask"> </div>
             </div>
+            <!-- puse el js acá porque no lograba hacer que el task nuevo quedara ordenado -->
+            <script src="assets/js/main.js "></script>
+            <div id="getTask"> </div>
+            <!-- así el nuevo task queda en el final de la lista -->
         </div>
+    </div>
     </div>
     <div align="center"><img src="assets/images/pusheen.png">
 
